@@ -208,14 +208,6 @@ const audio = await puter.ai.txt2speech(text, {
 await audio.play();
 ```
 
-## 🚀 **Next Steps**
-
-1. **Improve UX**: Add visual feedback for long operations
-2. **Test Limits**: Evaluate rate limiting and quotas
-3. **Hybrid Integration**: Implement specialized APIs for image/audio
-4. **Performance**: Optimize loading and responsiveness
-5. **Persistence**: Test conversation storage
-
 ## 📄 **License**
 
 This project is experimental and was developed for testing and evaluation purposes of the Puter.JS SDK.
