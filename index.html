@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PuterLab - Laboratório de IA</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src=""></script>
+  </head>
+
+  <body>
+    <div class="chat-container">
+      <div class="chat-header">
+        <figure>
+          <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bot">
+            <path d="M12 8V4H8"/>
+            <rect width="16" height="12" x="4" y="8" rx="2"/>
+            <path d="M2 14h2"/>
+            <path d="M20 14h2"/>
+            <path d="M15 13v2"/>
+            <path d="M9 13v2"/>
+          </svg>
+        </figure>
+        PuterLab
+      </div>
+
+      <div class="chat-messages" id="chat-messages">
+      </div>
+
+      <div class="chat-input">
+        <input
+          type="text"
+          id="user-input"
+          placeholder="Digite sua mensagem..."
+          autocomplete="off"
+        />
+        <button id="send-button" disabled>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="22" y1="2" x2="11" y2="13"></line>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+          </svg>
+        </button>
+        <button id="send-image" disabled>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-image-up-icon lucide-image-up"
+          >
+            <path
+              d="M10.3 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10l-3.1-3.1a2 2 0 0 0-2.814.014L6 21"
+            />
+            <path d="m14 19.5 3-3 3 3" />
+            <path d="M17 22v-5.5" />
+            <circle cx="9" cy="9" r="2" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="https://js.puter.com/v2/"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
